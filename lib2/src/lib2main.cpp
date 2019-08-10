@@ -3,6 +3,11 @@
 #include "LibAbstract.hpp"
 #include "Lib2.hpp"
 
+void hello(void)
+{
+    printf("Hello world\n");
+}
+
 Lib2::Lib2()
     {
         SDL_Renderer* renderer;

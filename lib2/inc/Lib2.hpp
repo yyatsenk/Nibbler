@@ -5,6 +5,7 @@
 #include "LibAbstract.hpp"
 #include <SDL2/SDL.h>
 
+extern void hello(void);
 
 class Lib2 : public LibAbstract
 {

@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/SDL2Test.dir/src/main.cpp.o  -o SDL2Test -Wl,-rpath,/home/yyatsenk/Desktop/Nibbler/build/lib1:/home/yyatsenk/Desktop/Nibbler/build/lib2 ../lib1/libfirst.so ../lib2/libsecond.so -lSDL2 
+/usr/bin/c++     CMakeFiles/SDL2Test.dir/src/main.cpp.o  -o SDL2Test -Wl,-rpath,/home/yyatsenk/Desktop/Nibbler/build/lib1:/home/yyatsenk/Desktop/Nibbler/build/lib2 ../lib1/libfirst.so ../lib2/libsecond.so -ldl -lSDL2 

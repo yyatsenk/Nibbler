@@ -35,4 +35,6 @@ Lib2.hpp
 /home/yyatsenk/Desktop/Nibbler/main/src/Lib2.hpp
 unistd.h
 -
+dlfcn.h
+-
 
