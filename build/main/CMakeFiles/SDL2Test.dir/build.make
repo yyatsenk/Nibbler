@@ -90,6 +90,8 @@ SDL2Test_EXTERNAL_OBJECTS =
 
 main/SDL2Test: main/CMakeFiles/SDL2Test.dir/src/main.cpp.o
 main/SDL2Test: main/CMakeFiles/SDL2Test.dir/build.make
+main/SDL2Test: lib1/libfirst.so
+main/SDL2Test: lib2/libsecond.so
 main/SDL2Test: main/CMakeFiles/SDL2Test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yyatsenk/Desktop/Nibbler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SDL2Test"
 	cd /home/yyatsenk/Desktop/Nibbler/build/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2Test.dir/link.txt --verbose=$(VERBOSE)

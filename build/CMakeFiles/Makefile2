@@ -81,7 +81,8 @@ main/preinstall:
 # Target rules for target main/CMakeFiles/SDL2Test.dir
 
 # All Build rule for target.
-main/CMakeFiles/SDL2Test.dir/all:
+main/CMakeFiles/SDL2Test.dir/all: lib1/CMakeFiles/first.dir/all
+main/CMakeFiles/SDL2Test.dir/all: lib2/CMakeFiles/second.dir/all
 	$(MAKE) -f main/CMakeFiles/SDL2Test.dir/build.make main/CMakeFiles/SDL2Test.dir/depend
 	$(MAKE) -f main/CMakeFiles/SDL2Test.dir/build.make main/CMakeFiles/SDL2Test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yyatsenk/Desktop/Nibbler/build/CMakeFiles --progress-num=1,2 "Built target SDL2Test"
@@ -94,7 +95,7 @@ all: main/CMakeFiles/SDL2Test.dir/all
 
 # Build rule for subdir invocation for target.
 main/CMakeFiles/SDL2Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyatsenk/Desktop/Nibbler/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyatsenk/Desktop/Nibbler/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 main/CMakeFiles/SDL2Test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyatsenk/Desktop/Nibbler/build/CMakeFiles 0
 .PHONY : main/CMakeFiles/SDL2Test.dir/rule
@@ -111,6 +112,116 @@ main/CMakeFiles/SDL2Test.dir/clean:
 
 # clean rule for target.
 clean: main/CMakeFiles/SDL2Test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib1
+
+# Convenience name for "all" pass in the directory.
+lib1/all: lib1/CMakeFiles/first.dir/all
+
+.PHONY : lib1/all
+
+# Convenience name for "clean" pass in the directory.
+lib1/clean: lib1/CMakeFiles/first.dir/clean
+
+.PHONY : lib1/clean
+
+# Convenience name for "preinstall" pass in the directory.
+lib1/preinstall:
+
+.PHONY : lib1/preinstall
+
+#=============================================================================
+# Target rules for target lib1/CMakeFiles/first.dir
+
+# All Build rule for target.
+lib1/CMakeFiles/first.dir/all:
+	$(MAKE) -f lib1/CMakeFiles/first.dir/build.make lib1/CMakeFiles/first.dir/depend
+	$(MAKE) -f lib1/CMakeFiles/first.dir/build.make lib1/CMakeFiles/first.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yyatsenk/Desktop/Nibbler/build/CMakeFiles --progress-num=3,4 "Built target first"
+.PHONY : lib1/CMakeFiles/first.dir/all
+
+# Include target in all.
+all: lib1/CMakeFiles/first.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+lib1/CMakeFiles/first.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyatsenk/Desktop/Nibbler/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 lib1/CMakeFiles/first.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyatsenk/Desktop/Nibbler/build/CMakeFiles 0
+.PHONY : lib1/CMakeFiles/first.dir/rule
+
+# Convenience name for target.
+first: lib1/CMakeFiles/first.dir/rule
+
+.PHONY : first
+
+# clean rule for target.
+lib1/CMakeFiles/first.dir/clean:
+	$(MAKE) -f lib1/CMakeFiles/first.dir/build.make lib1/CMakeFiles/first.dir/clean
+.PHONY : lib1/CMakeFiles/first.dir/clean
+
+# clean rule for target.
+clean: lib1/CMakeFiles/first.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib2
+
+# Convenience name for "all" pass in the directory.
+lib2/all: lib2/CMakeFiles/second.dir/all
+
+.PHONY : lib2/all
+
+# Convenience name for "clean" pass in the directory.
+lib2/clean: lib2/CMakeFiles/second.dir/clean
+
+.PHONY : lib2/clean
+
+# Convenience name for "preinstall" pass in the directory.
+lib2/preinstall:
+
+.PHONY : lib2/preinstall
+
+#=============================================================================
+# Target rules for target lib2/CMakeFiles/second.dir
+
+# All Build rule for target.
+lib2/CMakeFiles/second.dir/all:
+	$(MAKE) -f lib2/CMakeFiles/second.dir/build.make lib2/CMakeFiles/second.dir/depend
+	$(MAKE) -f lib2/CMakeFiles/second.dir/build.make lib2/CMakeFiles/second.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yyatsenk/Desktop/Nibbler/build/CMakeFiles --progress-num=5,6 "Built target second"
+.PHONY : lib2/CMakeFiles/second.dir/all
+
+# Include target in all.
+all: lib2/CMakeFiles/second.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+lib2/CMakeFiles/second.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyatsenk/Desktop/Nibbler/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 lib2/CMakeFiles/second.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyatsenk/Desktop/Nibbler/build/CMakeFiles 0
+.PHONY : lib2/CMakeFiles/second.dir/rule
+
+# Convenience name for target.
+second: lib2/CMakeFiles/second.dir/rule
+
+.PHONY : second
+
+# clean rule for target.
+lib2/CMakeFiles/second.dir/clean:
+	$(MAKE) -f lib2/CMakeFiles/second.dir/build.make lib2/CMakeFiles/second.dir/clean
+.PHONY : lib2/CMakeFiles/second.dir/clean
+
+# clean rule for target.
+clean: lib2/CMakeFiles/second.dir/clean
 
 .PHONY : clean
 

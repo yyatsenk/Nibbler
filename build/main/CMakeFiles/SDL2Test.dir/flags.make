@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/SDL2 
+CXX_INCLUDES = -I/home/yyatsenk/Desktop/Nibbler/main/. -I/home/yyatsenk/Desktop/Nibbler/main/../lib1/inc -I/home/yyatsenk/Desktop/Nibbler/main/../lib1 -I/home/yyatsenk/Desktop/Nibbler/main/../lib2/inc 
 

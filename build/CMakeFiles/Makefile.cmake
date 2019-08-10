@@ -13,6 +13,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
+  "../lib1/CMakeLists.txt"
+  "../lib2/CMakeLists.txt"
   "../main/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in"
@@ -113,9 +115,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "main/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib2/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "main/CMakeFiles/SDL2Test.dir/DependInfo.cmake"
+  "lib1/CMakeFiles/first.dir/DependInfo.cmake"
+  "lib2/CMakeFiles/second.dir/DependInfo.cmake"
   )

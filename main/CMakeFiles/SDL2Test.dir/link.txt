@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/SDL2Test.dir/src/main.cpp.o  -o SDL2Test -lSDL2 

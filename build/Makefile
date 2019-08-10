@@ -123,6 +123,32 @@ SDL2Test/fast:
 	$(MAKE) -f main/CMakeFiles/SDL2Test.dir/build.make main/CMakeFiles/SDL2Test.dir/build
 .PHONY : SDL2Test/fast
 
+#=============================================================================
+# Target rules for targets named first
+
+# Build rule for target.
+first: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 first
+.PHONY : first
+
+# fast build rule for target.
+first/fast:
+	$(MAKE) -f lib1/CMakeFiles/first.dir/build.make lib1/CMakeFiles/first.dir/build
+.PHONY : first/fast
+
+#=============================================================================
+# Target rules for targets named second
+
+# Build rule for target.
+second: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 second
+.PHONY : second
+
+# fast build rule for target.
+second/fast:
+	$(MAKE) -f lib2/CMakeFiles/second.dir/build.make lib2/CMakeFiles/second.dir/build
+.PHONY : second/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +158,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SDL2Test"
+	@echo "... first"
+	@echo "... second"
 .PHONY : help
 
 

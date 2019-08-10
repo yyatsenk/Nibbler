@@ -10,11 +10,16 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/SDL2"
+  "../main/."
+  "../main/../lib1/inc"
+  "../main/../lib1"
+  "../main/../lib2/inc"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/yyatsenk/Desktop/Nibbler/build/lib1/CMakeFiles/first.dir/DependInfo.cmake"
+  "/home/yyatsenk/Desktop/Nibbler/build/lib2/CMakeFiles/second.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

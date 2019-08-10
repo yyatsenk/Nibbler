@@ -206,6 +206,24 @@ SDL2Test_SOURCE_DIR:STATIC=/home/yyatsenk/Desktop/Nibbler/main
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SDL2
 
+//Value Computed by CMake
+first_BINARY_DIR:STATIC=/home/yyatsenk/Desktop/Nibbler/build/lib1
+
+//Dependencies for the target
+first_LIB_DEPENDS:STATIC=general;-lSDL2;
+
+//Value Computed by CMake
+first_SOURCE_DIR:STATIC=/home/yyatsenk/Desktop/Nibbler/lib1
+
+//Value Computed by CMake
+second_BINARY_DIR:STATIC=/home/yyatsenk/Desktop/Nibbler/build/lib2
+
+//Dependencies for the target
+second_LIB_DEPENDS:STATIC=general;-lSDL2;
+
+//Value Computed by CMake
+second_SOURCE_DIR:STATIC=/home/yyatsenk/Desktop/Nibbler/lib2
+
 
 ########################
 # INTERNAL cache entries
@@ -305,7 +323,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
