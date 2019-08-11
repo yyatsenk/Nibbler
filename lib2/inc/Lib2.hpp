@@ -5,16 +5,21 @@
 #include "LibAbstract.hpp"
 #include <SDL2/SDL.h>
 
-extern void hello(void);
+extern "C" void hello(void);
 
 class Lib2 : public LibAbstract
 {
     SDL_Window *window;
+    SDL_Renderer* renderer;
     public:
     
     Lib2();
     ~Lib2();
-    void Destroy();
+    virtual int     WindowCreate(int width, int height);
+    virtual void    WindowDestroy();
+    virtual int     GetEvents();
 };
+
+extern "C" LibAbstract *createLib2(void);
 
 #endif
