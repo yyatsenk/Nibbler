@@ -77,7 +77,7 @@ Lib2::Lib2()
         SDL_Surface *screen = SDL_GetWindowSurface(window);
 
     // let's just show some classic code for reference
-   SDL_Surface *image = SDL_LoadBMP("/home/yyatsenk/Desktop/Nibbler/textures/LGHammerTone2.bmp"); // loads image
+   SDL_Surface *image = SDL_LoadBMP("/home/yyatsenko/unit/Nibbler/textures/LGHammerTone2.bmp"); // loads image
     printf("%p\n", image);
     SDL_BlitSurface(image, NULL, screen, NULL); // blit it to the screen
     SDL_FreeSurface(image);

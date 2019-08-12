@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
     char *error;
     LibAbstract *(*createLIB2)(void);
 
-   handle = dlopen("/home/yyatsenk/Desktop/Nibbler/build/lib2/libsecond.so", RTLD_LAZY);
+   handle = dlopen("/home/yyatsenko/unit/Nibbler/build/lib2/libsecond.so", RTLD_LAZY);
     if (!handle) {
         fprintf(stderr, "%s\n", dlerror());
         exit(EXIT_FAILURE);
