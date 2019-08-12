@@ -8,7 +8,7 @@ void hello(void)
     printf("Hello world\n");
 }
 
-LibAbstract *createLib2(void)
+LibAbstract *createLib(void)
 {
     return new Lib2();
 }

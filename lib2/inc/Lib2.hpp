@@ -20,6 +20,6 @@ class Lib2 : public LibAbstract
     virtual int     GetEvents();
 };
 
-extern "C" LibAbstract *createLib2(void);
+extern "C" LibAbstract *createLib(void);
 
 #endif
