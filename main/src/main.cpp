@@ -5,6 +5,7 @@
 #include "Lib2.hpp"
 #include <unistd.h>
 #include <dlfcn.h>
+#include <SDL2/SDL.h>
 
 int lib_num = 0;
 
@@ -50,7 +51,77 @@ void gameLoop(LibAbstract *test, void *handle, LibAbstract *(*createLIB)(void))
 
 int main(int argc, char* argv[])
 {
+/*
+    SDL_Window *o;
+    SDL_Renderer *r;
+    SDL_Event e;
+    SDL_Rect q;
+    int i =1;
+    q.x = 15;  //the x coordinate
+        q.y = 35; // the y coordinate
+        q.w = 100; //the width of the texture
+        q.h = 50; //the height of the texture
+    SDL_Init(SDL_INIT_VIDEO);
 
+    o = SDL_CreateWindow("Game test",
+                            SDL_WINDOWPOS_UNDEFINED,
+                            SDL_WINDOWPOS_UNDEFINED,
+                            1024,
+                            800,
+                            SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
+
+    r = SDL_CreateRenderer(o, -1,SDL_RENDERER_ACCELERATED);
+
+    while(i)
+    {
+        while(SDL_PollEvent(&e) !=0)
+        {
+            if(e.type == SDL_QUIT)
+                i=0;
+            else if(e.type == SDL_KEYDOWN)
+            {
+                switch(e.key.keysym.sym)
+                {
+                case SDLK_ESCAPE:
+                case SDLK_q:
+                    i=0;
+                break;
+                case SDLK_UP:
+                    q.y -=10;
+                break;
+                case SDLK_DOWN:
+                    q.y +=10;
+                break;
+                case SDLK_RIGHT:
+                    q.x +=10;
+                break;
+                case SDLK_LEFT:
+                    q.x -=10;
+                break;
+                }
+            }
+        }
+        SDL_SetRenderDrawColor(r,0,0,255,255);
+        SDL_RenderClear(r);
+        // Creating the rectangle
+        //q.x=175;
+        //q.y=100;
+        //q.h=50;
+        //q.w=50;
+
+        SDL_SetRenderDrawColor(r,0,0,0,255);
+
+        SDL_RenderFillRect(r,&q);
+
+        SDL_RenderPresent(r);
+    }
+
+    SDL_DestroyWindow(o);
+    SDL_DestroyRenderer(r);
+    SDL_Quit();
+
+    return 0;
+*/
     void *handle;
     void (*hello_world)(void);
     char *error;

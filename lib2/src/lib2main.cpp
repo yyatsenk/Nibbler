@@ -97,7 +97,7 @@ Lib2::Lib2()
         texture_rect.h = 50; //the height of the texture
         // Clear the entire screen to our selected color.
         SDL_RenderClear(renderer);
-        SDL_Surface *image = SDL_LoadBMP("/home/yyatsenko/unit/Nibbler/textures/LGHammerTone2.bmp"); // loads image
+        SDL_Surface *image = SDL_LoadBMP("/home/yyatsenko/unit/Nibbler/textures/grass.bmp"); // loads image
         SDL_Texture *newTexture = SDL_CreateTextureFromSurface(renderer, image);
         SDL_RenderCopy(renderer, newTexture, NULL, NULL); 
         // Up until now everything was drawn behind the scenes.
