@@ -77,7 +77,7 @@ Lib2::Lib2()
         SDL_Surface *screen = SDL_GetWindowSurface(window);
 
     // let's just show some classic code for reference
-   SDL_Surface *image = SDL_LoadBMP("/home/yyatsenko/unit/Nibbler/textures/LGHammerTone2.bmp"); // loads image
+ /*  SDL_Surface *image = SDL_LoadBMP("/home/yyatsenko/unit/Nibbler/textures/LGHammerTone2.bmp"); // loads image
     printf("%p\n", image);
     SDL_BlitSurface(image, NULL, screen, NULL); // blit it to the screen
     SDL_FreeSurface(image);
@@ -86,17 +86,21 @@ Lib2::Lib2()
     SDL_UpdateWindowSurface(window);
 
     // show image for 2 seconds
-    SDL_Delay(2000);
+    SDL_Delay(2000);*/
         // We must call SDL_CreateRenderer in order for draw calls to affect this window.
-        /* renderer = SDL_CreateRenderer(window, -1, 0);
-
-        // Select the color for drawing. It is set to red here.
-        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-
+         renderer = SDL_CreateRenderer(window, -1, 0);
+         //SDL_Texture* texture = IMG_LoadTexture(renderer, "home/yyatsenko/unit/Nibbler/textures/LGHammerTone2.bmp");
+        SDL_Rect texture_rect;
+        texture_rect.x = 0;  //the x coordinate
+        texture_rect.y = 0; // the y coordinate
+        texture_rect.w = 50; //the width of the texture
+        texture_rect.h = 50; //the height of the texture
         // Clear the entire screen to our selected color.
         SDL_RenderClear(renderer);
-
+        SDL_Surface *image = SDL_LoadBMP("/home/yyatsenko/unit/Nibbler/textures/LGHammerTone2.bmp"); // loads image
+        SDL_Texture *newTexture = SDL_CreateTextureFromSurface(renderer, image);
+        SDL_RenderCopy(renderer, newTexture, NULL, NULL); 
         // Up until now everything was drawn behind the scenes.
         // This will show the new, red contents of the window.
-        SDL_RenderPresent(renderer);*/
+        SDL_RenderPresent(renderer);
     }
