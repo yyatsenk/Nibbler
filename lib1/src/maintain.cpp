@@ -34,6 +34,7 @@ Lib1::Lib1()
         texture_rect.w = 100; //the width of the texture
         texture_rect.h = 50; //the height of the texture
     int running = 1;
+    int j = 0;
     while(running)
 {
     while(SDL_PollEvent(&event)) // check to see if an event has happened
@@ -76,7 +77,6 @@ Lib1::Lib1()
         SDL_SetRenderDrawColor(renderer,0,255,0,255);
         SDL_RenderFillRect(renderer, &texture_rect);
         SDL_RenderPresent(renderer);
-        
     }
 }
     }
